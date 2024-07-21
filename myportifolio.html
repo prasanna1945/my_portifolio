@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTech Student Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .profile-img {
+            width: 250px; 
+            height: 250px; 
+            border-radius: 50%;
+            margin-bottom: 20px; 
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 36px;
+        }
+
+        h2 {
+            color: #40343d;
+            border-bottom: 2px solid #394034;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .dark-mode h2 {
+            color: #fff;
+            border-color: #ccc;
+        }
+
+        .list-group-item {
+            background-color: #b7d6df;
+            border: 1px solid #083767;
+            margin-bottom: 10px;
+        }
+
+        .dark-mode .list-group-item {
+            background-color: #495057;
+            border-color: #6c757d;
+        }
+
+        .mt-5 {
+            margin-top: 3rem !important;
+        }
+
+        .navbar {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px 0;
+            background-color: #083767;
+            color: #fff;
+            text-align: center;
+        }
+
+        a {
+            color: #083767;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .dark-mode a {
+            color: #fff;
+        }
+
+        .skills-bar {
+            margin-bottom: 10px;
+        }
+
+        .skill-level {
+            width: 0;
+            height: 20px;
+            background-color: #083767;
+            transition: width 1.5s;
+        }
+
+        .dark-mode .skill-level {
+            background-color: #17a2b8;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light" id="darkModeToggle">Toggle Dark Mode</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <img src="prasanna.jpeg" alt="Profile Image" class="profile-img">
+
+                <h1>Gara Naga Prasanna</h1>
+                <p class="lead">BTech Student in Computer Science</p>
+                <p>Email: <a href="mailto:22pa1a0543@vishnu.edu.in">22pa1a0543@vishnu.edu.in</a></p>
+                <p>Phone: 9390008683</p>
+                <div class="social-links">
+                    <a href="http://www.linkedin.com/in/naga-prasanna-gara-40155925b" class="mr-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/prasanna1945" class="mr-2"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="mt-5" id="about">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a passionate and dedicated BTech student in Computer Science at Vishnu Institute of Technology. I have a strong interest in web development, artificial intelligence, and machine learning. I am always eager to learn new technologies and apply them to real-world problems.
+                    </p>
+                </div>
+                <div class="mt-5" id="education">
+                    <h2>Education</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">BTech in Computer Science, Vishnu Institute of Technology, 2022 - 2026</li>
+                        <li class="list-group-item">Sri Chaitanya Junior College, Reppalle, 2020 - 2022</li>
+                        <li class="list-group-item">Vidya Bharathi E.M. High School, Nagayalanka, 2020</li>
+                    </ul>
+                </div>
+                <div class="mt-5" id="skills">
+                    <h2>Skills</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skills-bar">
+                                <p>Python</p>
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                            <div class="skills-bar">
+                                <p>HTML, CSS, JavaScript</p>
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skills-bar">
+                                <p>MySQL</p>
+                                <div class="skill-level" style="width: 75%;"></div>
+                            </div>
+                            <div class="skills-bar">
+                                <p>MongoDB</p>
+                                <div class="skill-level" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5" id="projects">
+                    <h2>Projects</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Certification Courses</h5>
+                                    <p class="card-text">
+                                        1. Machine Learning with Python: A Practical Introduction<br>
+                                        2. Java Programming Fundamentals
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Restaurant Web Page</h5>
+                                    <p class="card-text">A restaurant web page created using Firestore database.</p>
+                                    <a href="https://github.com/prasanna1945/md-capsto" class="btn btn-primary" target="_blank">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5" id="contact">
+                    <h2>Contact</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gara Naga Prasanna. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Validate form
+            if (name === '' || email === '' || message === '') {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            // Simulate form submission
+            console.log('Form submitted');
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Message:', message);
+
+            alert('Thank you for your message!');
+
+            // Reset form
+            document.getElementById('contactForm').reset();
+        });
+
+        // Dark mode toggle
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Animate skill levels on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillLevels = document.querySelectorAll('.skill-level');
+            skillLevels.forEach(skill => {
+                skill.style.width = skill.getAttribute('style').split(':')[1];
+            });
+        });
+    </script>
+</body>
+</html>
